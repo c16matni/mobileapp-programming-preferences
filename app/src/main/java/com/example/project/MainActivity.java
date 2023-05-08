@@ -14,7 +14,7 @@ import androidx.appcompat.widget.Toolbar;
 public class MainActivity extends AppCompatActivity {
 
     private SharedPreferences myPreferenceRef;
-    private SharedPreferences.Editor myPreferenceEditor;
+
 
     public TextView textView;
 
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         textView = (TextView) findViewById(R.id.Text);
 
         myPreferenceRef = getPreferences(MODE_PRIVATE);
-        myPreferenceEditor = myPreferenceRef.edit();
+
 
         button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
